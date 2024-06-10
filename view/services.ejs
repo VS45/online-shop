@@ -1,0 +1,17 @@
+<%-include('includes/navbar') %>
+    <h2>Welcome to our company! </h2>
+    <h3>This is our service page</h3>
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Location</th>
+        </tr>
+        <%for(item of serviceList){ %>
+<tr>
+    <td><%=item.title%></td>
+    <td><%=item.location%></td>
+</tr>
+            <% }%>
+    </table>
+</body>
+</html>

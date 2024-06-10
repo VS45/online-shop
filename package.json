@@ -1,0 +1,27 @@
+{
+  "name": "online-shop",
+  "version": "1.0.0",
+  "description": "Design an online shop that allow users to create own shop and manage it",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shop",
+    "online",
+    "market",
+    "selling",
+    "online",
+    "online",
+    "supermarket"
+  ],
+  "author": "VS45 Tech",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.0"
+  }
+}

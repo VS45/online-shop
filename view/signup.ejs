@@ -1,0 +1,43 @@
+<%-include('includes/navbar') %>
+<form action="/signup" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="text" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td>
+                <input type="number" name="phoneNumber">
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password" name="passWord">
+            </td>
+        </tr>
+        <tr>
+            <td>Confirm Password:</td>
+            <td>
+                <input type="password" name="cpassword">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button>Register</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
