@@ -27,7 +27,7 @@ exports.postSignup=(req,res)=>{
     const password=req.body.passWord;
     const confirmPassword=req.body.cpassword;
     const user={name:Name,email:Email,phone:Phone,password:password};
-    console.log(Name,Email,Phone,password,confirmPassword)
+    // send user record into database
 User.create(user,(error,result)=>{
     if(error){
         console.log(error)
@@ -37,4 +37,13 @@ User.create(user,(error,result)=>{
     res.redirect('/login')
 })
    
+}
+
+exports.getUsers=(req,res)=>{
+User.getAll((err,result)=>{
+    if(err) return console.log(err)
+    console.log(result)
+//[{id:1,nam:'',email:''}]
+res.render('users',{usersList:result,title:'All Users'})
+})
 }
