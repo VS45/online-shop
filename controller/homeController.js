@@ -43,7 +43,6 @@ exports.getUsers=(req,res)=>{
 User.getAll((err,result)=>{
     if(err) return console.log(err)
     console.log(result)
-//[{id:1,nam:'',email:''}]
 res.render('users',{usersList:result,title:'All Users'})
 })
 }
