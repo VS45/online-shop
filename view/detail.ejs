@@ -1,0 +1,38 @@
+<%-include('includes/navbar') %>
+<form action="/user/update" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="text" name="name" value="<%=userDetails.name%>">
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="email" name="email" value="<%=userDetails.email%>">
+            </td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td>
+                <input type="number" name="phoneNumber" value="<%=userDetails.phone%>">
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password" name="passWord" value="<%=userDetails.password%>">
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>
+                <button>Register</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

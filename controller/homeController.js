@@ -46,3 +46,17 @@ User.getAll((err,result)=>{
 res.render('users',{usersList:result,title:'All Users'})
 })
 }
+
+exports.getSingleUser=(req,res)=>{
+const userId=req.params.id;
+console.log(userId)
+User.getById(userId,(err,result)=>{
+    if(err) {
+        console.log(err)
+        return
+    }
+console.log(result[0])
+res.render('detail',{title:'Detail Page',userDetails:result[0]})
+})
+
+}
